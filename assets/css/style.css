@@ -117,13 +117,17 @@ h6 {
   color: #fff;
   line-height: 1;
   margin-right: 8px;
-  border-radius: 50%;
-  width: 40px;
+  border-radius: 10px;
+  width: 120px;
   height: 40px;
-}
+  border-color: #2c98ff;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #2c99ff00 inset, 0 0 0 0 #2c98ff;
+  transition: all 150ms ease-in-out;
+  }
 
 #header .social-links a:hover {
-  background: #2c98ff;
+  box-shadow: 0 0 10px 0 #2c98ff inset, 0 0 5px 4px #2c98ff;
 }
 
 @media (max-width: 992px) {
@@ -154,7 +158,7 @@ h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: #030309e6;
 }
 
 #header.header-top .social-links,
@@ -354,7 +358,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  background: #030309e6;
   padding: 30px;
 }
 
@@ -447,17 +451,18 @@ section .container {
   position: relative;
   text-align: center;
   background: rgba(255, 255, 255, 0.08);
+  border: #2c98ff solid 1px;
+  border-radius: 10px;
 }
 
 .counts .count-box i {
   position: absolute;
-  top: -25px;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: rgba(255, 255, 255, 0.1);
   padding: 12px;
-  color: #2c98ff;
+  color: #ffffff;
   border-radius: 50px;
   line-height: 0;
 }
@@ -507,7 +512,7 @@ section .container {
 
 .skills .progress-bar1 {
   width: 1px;
-  height: 10px;
+  height: 4px;
   transition: 0.9s;
   background-color: #31A8FF;
 }
@@ -515,36 +520,72 @@ section .container {
 .skills .progress-bar2 {
   background-color: #F79500;
   width: 1px;
-  height: 10px;
+  height: 4px;
   transition: 0.9s;
 }
 
 .skills .progress-bar3 {
   background-color: #FF3366;
   width: 1px;
-  height: 10px;
+  height: 4px;
   transition: 0.9s;
 }
 
 .skills .progress-bar4 {
   background-color: #0ACF83;
   width: 1px;
-  height: 10px;
+  height: 4px;
   transition: 0.9s;
 }
 
 .skills .progress-bar5 {
   background-color: #9999FF;
   width: 1px;
-  height: 10px;
+  height: 4px;
   transition: 0.9s;
 }
 
 .skills .progress-bar6 {
   background-color: #F16529;
   width: 1px;
-  height: 10px;
+  height: 4px;
   transition: 0.9s;
+}
+
+.skills-content .skill  .line{
+  display: inline-block;
+  height: 3px;
+   position: relative;
+  left: 4px;
+  top: -2px;
+}
+.skills-content .skill.ps .line{
+  background: #31A8FF;
+  width: 45%;
+}
+.skills-content .skill.ai .line{
+  background: #F79500;
+  width: 69%;
+}
+
+.skills-content .skill.in .line{
+  background: #FF3366;
+  width: 57.5%
+}
+
+.skills-content .skill.fi .line{
+  background: #0ACF83;
+  width: 30%;
+}
+
+.skills-content .skill.ae .line{
+  background: #9999FF;
+  width: 47.5%;
+}
+
+.skills-content .skill.hc .line{
+  background: #F16529;
+  width: 62.5%;
 }
 
 /*--------------------------------------------------------------
@@ -553,9 +594,12 @@ section .container {
 .interests .icon-box {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 20px;
   background: rgba(255, 255, 255, 0.08);
   transition: ease-in-out 0.3s;
+  border: #2c98ff solid 1px;
+  border-radius: 10px;
 }
 
 .interests .icon-box i {
@@ -573,9 +617,9 @@ section .container {
   color: #fff;
 }
 
-.interests .icon-box:hover {
+/* .interests .icon-box:hover {
   background: rgba(255, 255, 255, 0.12);
-}
+} */
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -728,6 +772,11 @@ section .container {
   background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
+  border-radius: 10px;
+}
+
+.services .icon-box:hover {  
+  box-shadow: 0 0 10px 0 #2c98ff inset, 0 0 5px 4px #2c98ff;
 }
 
 .services .icon-box .icon {
@@ -779,7 +828,6 @@ section .container {
 }
 
 .services .icon-box:hover {
-  background: #2c98ff;
   border-color: #2c98ff;
 }
 
@@ -792,7 +840,7 @@ section .container {
 }
 
 .services .icon-box:hover .icon::before {
-  background: #0082fc;
+  background: #0060b9;
 }
 
 .services .icon-box:hover h4 a,
@@ -831,9 +879,12 @@ section .container {
   border-radius: 4px;
 }
 
-.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li:hover{
+  box-shadow: 0 0 10px 0 #2c98ff inset, 0 0 5px 4px #2c98ff;
+}
+
 .portfolio #portfolio-flters li.filter-active {
-  background: #2c98ff;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1038,6 +1089,8 @@ section .container {
   padding: 20px;
   width: 100%;
   background: rgba(255, 255, 255, 0.08);
+  border: #2c98ff solid 1px;
+  border-radius: 10px;
 }
 
 .contact .info-box i.bx {
@@ -1046,7 +1099,7 @@ section .container {
   border-radius: 50%;
   padding: 14px;
   float: left;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 0, 0, 0);
 }
 
 .contact .info-box h3 {
@@ -1085,6 +1138,7 @@ section .container {
 .contact .php-email-form {
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
 }
 
 .contact .php-email-form .error-message {
@@ -1138,11 +1192,12 @@ section .container {
   border: 0;
   transition: 0.3s;
   color: #fff;
+  border-radius: 10px;
 }
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  background-color: rgba(255, 255, 255, 0.11);
+  background-color: #2c99ff77;
 }
 
 .contact .php-email-form input::-moz-placeholder,
@@ -1166,7 +1221,7 @@ section .container {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #2c98ff;
+  background: rgba(255, 255, 255, 0.1);
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1175,7 +1230,7 @@ section .container {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #002e58;
+  box-shadow: 0 0 10px 0 #2c98ff inset, 0 0 5px 4px #2c98ff;
 }
 
 @-webkit-keyframes animate-loading {
