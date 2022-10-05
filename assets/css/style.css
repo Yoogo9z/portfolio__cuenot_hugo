@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "myriadpro-regular";
   background-color: #040404;
   color: #fff;
   position: relative;
@@ -93,9 +93,9 @@ h6 {
 }
 
 #header h2 span {
-  color: #fff;
-  /* border-bottom: 2px solid #2c98ff; */
+  color: #2c98ff;
   padding-bottom: 6px;
+  font-weight: 800;
 }
 
 #header img {
@@ -124,26 +124,27 @@ h6 {
   color: #fff;
   box-shadow: 0 0 40px 40px #2c99ff00 inset, 0 0 0 0 #2c98ff;
   transition: all 150ms ease-in-out;
-  }
+}
 
 #header .social-links a:hover {
   box-shadow: 0 0 10px 0 #2c98ff inset, 0 0 5px 4px #2c98ff;
+  color: #2c98ff;
 }
 
 @media (max-width: 992px) {
   #header h1 {
     font-size: 36px;
   }
-
+  
   #header h2 {
     font-size: 20px;
     line-height: 30px;
   }
-
+  
   #header .social-links {
     margin-top: 15px;
   }
-
+  
   #header .container {
     display: flex;
     flex-direction: column;
@@ -184,7 +185,7 @@ h6 {
   #header.header-top {
     height: 60px;
   }
-
+  
   #header.header-top h1 {
     font-size: 26px;
   }
@@ -284,7 +285,7 @@ h6 {
   .mobile-nav-toggle {
     display: block;
   }
-
+  
   .navbar ul {
     display: none;
   }
@@ -366,14 +367,14 @@ section .container {
   section {
     top: 120px;
   }
-
+  
   section.section-show {
     top: 80px;
   }
 }
 
 .section-title h2 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
   padding: 0;
   line-height: 1px;
@@ -494,10 +495,9 @@ section .container {
 .skills .progress .skill {
   padding: 10px 0;
   margin: 0;
-  text-transform: uppercase;
   display: block;
-  font-weight: 600;
-  font-family: "alef-bold";
+  font-family: "myriadpro-regular";
+  font-size: 15px;
   color: #fff;
 }
 
@@ -555,37 +555,37 @@ section .container {
 .skills-content .skill  .line{
   display: inline-block;
   height: 3px;
-   position: relative;
+  position: relative;
   left: 4px;
   top: -2px;
 }
 .skills-content .skill.ps .line{
   background: #31A8FF;
-  width: 45%;
+  width: 50%;
 }
 .skills-content .skill.ai .line{
   background: #F79500;
-  width: 69%;
+  width: 74.5%;
 }
 
 .skills-content .skill.in .line{
   background: #FF3366;
-  width: 57.5%
+  width: 61.5%
 }
 
 .skills-content .skill.fi .line{
   background: #0ACF83;
-  width: 30%;
+  width: 37%;
 }
 
 .skills-content .skill.ae .line{
   background: #9999FF;
-  width: 47.5%;
+  width: 53.5%;
 }
 
 .skills-content .skill.hc .line{
   background: #F16529;
-  width: 62.5%;
+  width: 63.5%;
 }
 
 /*--------------------------------------------------------------
@@ -775,8 +775,23 @@ section .container {
   border-radius: 10px;
 }
 
-.services .icon-box:hover {  
+/* .services .icon-box:hover {  
   box-shadow: 0 0 10px 0 #2c98ff inset, 0 0 5px 4px #2c98ff;
+} */
+
+.services .services-ai:hover {  
+  box-shadow: 0 0 10px 0 #F79500 inset, 0 0 5px 4px #F79500;
+  border-radius: 10px;
+}
+
+.services .services-in:hover {  
+  box-shadow: 0 0 10px 0 #FF3366 inset, 0 0 5px 4px #ff3366;
+  border-radius: 10px;
+}
+
+.services .services-ps:hover {  
+  box-shadow: 0 0 10px 0 #31A8FF inset, 0 0 5px 4px #31A8FF;
+  border-radius: 10px;
 }
 
 .services .icon-box .icon {
@@ -827,7 +842,7 @@ section .container {
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
+/* .services .icon-box:hover {
   border-color: #2c98ff;
 }
 
@@ -836,17 +851,67 @@ section .container {
 }
 
 .services .icon-box:hover .icon i {
-  color: #0084ff;
+  color: #2c98ff;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #0060b9;
+  background: #2c98ff;
 }
 
 .services .icon-box:hover h4 a,
 .services .icon-box:hover p {
   color: #fff;
+} */
+
+.services .services-ai .icon-box .icon-ai{
+  background:#F79500;
 }
+
+.services-ai .icon-box:hover .icon::before {
+  background: #f79500;
+}
+
+.services-ai .icon-box:hover .icon {
+  background: #fff;
+}
+
+.services-ai .icon-box:hover .icon i {
+  color: #f79500;
+}
+
+
+.services .services-in .icon-box .icon-in{
+  background:#FF3366;
+}
+
+.services-in .icon-box:hover .icon::before {
+  background: #FF3366;
+}
+
+.services-in .icon-box:hover .icon {
+  background: #fff;
+}
+
+.services-in .icon-box:hover .icon i {
+  color: #FF3366;
+}
+
+.services .services-ps .icon-box .icon-ps{
+  background:#31A8FF;
+}
+
+.services-ps .icon-box:hover .icon::before {
+  background: #31A8FF;
+}
+
+.services-ps .icon-box:hover .icon {
+  background: #fff;
+}
+
+.services-ps .icon-box:hover .icon i {
+  color: #31A8FF;
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -868,7 +933,7 @@ section .container {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
@@ -879,8 +944,24 @@ section .container {
   border-radius: 4px;
 }
 
+.portfolio #portfolio-flters li.ui-ux:hover{
+  box-shadow: 0 0 10px 0 #0ACF83 inset, 0 0 5px 4px #0ACF83;
+  color: #0ACF83;
+}
+
+.portfolio #portfolio-flters li.photomontage:hover{
+  box-shadow: 0 0 10px 0 #31A8FF inset, 0 0 5px 4px #31a8ff;
+  color: #31a8ff;
+}
+
+.portfolio #portfolio-flters li.logo:hover{
+  box-shadow: 0 0 10px 0 #F79500 inset, 0 0 5px 4px #F79500;
+  color: #F79500;
+}
+
 .portfolio #portfolio-flters li:hover{
-  box-shadow: 0 0 10px 0 #2c98ff inset, 0 0 5px 4px #2c98ff;
+  box-shadow: 0 0 10px 0 #ffffff inset, 0 0 5px 4px #ffffff;
+  color: #ffffff;
 }
 
 .portfolio #portfolio-flters li.filter-active {
@@ -984,7 +1065,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #2c98ff;
+  color: #ffffff;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -1095,7 +1176,7 @@ section .container {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #2c98ff;
+  color: #ffffff;
   border-radius: 50%;
   padding: 14px;
   float: left;
@@ -1231,13 +1312,14 @@ section .container {
 
 .contact .php-email-form button[type=submit]:hover {
   box-shadow: 0 0 10px 0 #2c98ff inset, 0 0 5px 4px #2c98ff;
+  color: #2c98ff;
 }
 
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
   }
-
+  
   100% {
     transform: rotate(360deg);
   }
@@ -1247,7 +1329,7 @@ section .container {
   0% {
     transform: rotate(0deg);
   }
-
+  
   100% {
     transform: rotate(360deg);
   }
