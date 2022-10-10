@@ -18,13 +18,11 @@ body {
 
 .sable-noir{
   position: fixed;
-  /* inset: 0; */
+  inset: 0;
   z-index: -2;
-  height: 100%;
-  width: 100%;
-  /* background: url("/assets/img/fond-noir1.jpg") repeat center center; */
+  background: url("./assets/img/fond-noir1.jpg") repeat center center;
   animation: gradient 25s ease infinite;
-  /* background-size: 120% 120%; */
+  background-size: 120% 120%;
 }
 
 body::before {
