@@ -20,12 +20,11 @@ body {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background: url("/assets/img/fond-noir1.jpg") repeat center center;
-  animation: gradient 25s ease infinite;
-  background-size: 120% 120%;
-  visibility: visible;
-  mix-blend-mode: difference;
-  pointer-events: none;
+  /* background: url("/assets/img/fond-noir1.jpg") repeat center center; */
+  /* animation: gradient 25s ease infinite; */
+  /* background-size: 120% 120%; */
+  height: 100%;
+  width: 100%;
 }
 
 body::before {
